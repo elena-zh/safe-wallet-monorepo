@@ -105,7 +105,7 @@ const SwapWidget = ({ sell }: Params) => {
     width: '100%', // Width in pixels (or 100% to use all available space)
     height: '860px',
     chainId,
-    baseUrl: useStagingCowServer 'https://dev.swap.cow.fi',
+    baseUrl: useStagingCowServer ? 'https://dev.swap.cow.fi' : 'https://dev.swap.cow.fi',
     standaloneMode: false,
     disableToastMessages: true,
     disablePostedOrderConfirmationModal: true,
